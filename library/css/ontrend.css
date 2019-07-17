@@ -1,8 +1,16 @@
 body {
   font-size: 20px;
-  line-height: 120%;
+  line-height: 160%;
   background: linear-gradient(100deg, #1200ff, #ff9400);
-  color: #222; }
+  color: #222;
+  font-family: "Overpass", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Chivo", sans-serif; }
 
 .header {
   background: #222; }
@@ -47,7 +55,7 @@ body {
       .nav li.menu-item-has-children ul ul li a {
         padding-left: 40px; }
 
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
   .hamburger {
     display: none; }
 
@@ -96,5 +104,50 @@ body {
 nav {
   width: 100%;
   text-align: center; }
+
+h1 {
+  margin: 0 0 .5em 0;
+  font-size: 1.5em; }
+  @media all and (min-width: 768px) {
+    h1 {
+      font-size: 2.5em; } }
+
+.entry-content {
+  padding: 1em; }
+  @media all and (min-width: 768px) {
+    .entry-content {
+      padding: 1.5em; } }
+  .entry-content.sidebar {
+    padding-right: 1em !important; }
+    @media all and (min-width: 768px) {
+      .entry-content.sidebar {
+        padding: 1.5em !important; } }
+
+.article-footer {
+  display: none; }
+
+.sidebar {
+  background: #FFF;
+  margin: 0;
+  border-radius: 4px;
+  margin-bottom: 1.5em; }
+
+.widget {
+  padding: 0;
+  margin: 0; }
+
+.searchform input {
+  box-sizing: border-box;
+  max-width: none;
+  background: #d0ccff; }
+.searchform button {
+  width: 100%;
+  background: #ff9400;
+  border-radius: 4px;
+  border: none;
+  padding: .3em;
+  line-height: 150%; }
+  .searchform button:hover {
+    background: #e68500; }
 
 /*# sourceMappingURL=ontrend.css.map */

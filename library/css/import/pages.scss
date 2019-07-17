@@ -1,0 +1,70 @@
+h1 {
+  margin: 0 0 .5em 0;
+  font-size: 1.5em;
+
+  @media all and (min-width: $tablet) {
+    font-size: 2.5em;
+  }
+}
+
+.entry-content {
+  padding: 1em;
+
+  @media all and (min-width:$tablet) {
+    padding: 1.5em;
+  }
+
+  &.sidebar {
+    padding-right: 1em!important;
+
+      @media all and (min-width:$tablet) {
+      padding: 1.5em!important;
+    }
+  }
+}
+
+
+
+
+
+.article-footer {
+  display: none;
+}
+
+
+
+
+// sidebar
+.sidebar {
+  background: $white;
+  margin: 0;
+  border-radius: $border-radius;
+  margin-bottom: 1.5em;
+}
+
+.widget {
+  padding: 0;
+  margin: 0;
+}
+
+.searchform {
+
+  input {
+    box-sizing: border-box;
+    max-width: none;
+    background: lighten($color-one, 40%);
+  }
+
+  button {
+    width: 100%;
+    background: $color-two;
+    border-radius: $border-radius;
+    border: none;
+    padding: .3em;
+    line-height: 150%;
+
+    &:hover {
+      background: darken($color-two, 5%);
+    }
+  }
+}

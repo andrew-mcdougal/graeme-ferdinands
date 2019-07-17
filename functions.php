@@ -239,7 +239,7 @@ can replace these fonts, change it in your scss files
 and be up and running in seconds.
 */
 function bones_fonts() {
-  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Chivo:700|Overpass:600,600i,800');
+  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Chivo:700|Overpass:300,300i,600,600i,800');
   wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 }
 
