@@ -1,0 +1,162 @@
+// mobile first header
+.header {
+  background: $primary;
+}
+
+// hamburger
+.hamburger {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+// no height mobile nav for slidedown effect
+.nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s ease-in;
+
+  &.show-menu {
+    max-height: 100vh;
+  }
+
+  li {
+    position: relative;
+    border-top: 1px solid rgba($color-one, 0.2);
+
+    a {
+      font-size: .9em;
+
+      color: $primary;
+
+      &:visited,
+      &:hover,
+      &:focus
+      &:visited:hover,
+      &:visited:focus,
+      &:link,
+      &:visited:link {
+        color: $primary;
+      }
+
+      &:hover {
+        background: lighten($color-one, 40%);
+      }
+    }
+
+    // has sub nav
+    &.menu-item-has-children {
+
+      .fa {
+        position: absolute;
+        z-index: 100;
+        cursor: pointer;
+        right: 10px;
+        top: 12px;
+        font-size: 1.5em;
+        color: $primary;
+      }
+
+      // sub nav
+      ul {
+        margin: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .4s ease-in;
+
+        &.show-submenu {
+          max-height: 100vh;
+        }
+
+        ul li a {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:768px) {
+  // hamburger
+  .hamburger {
+    display: none;
+  }
+
+  .nav {
+    max-height: none;
+    overflow: visible;
+
+    &:before {
+      display: none;
+    }
+
+    i {
+      display: none;
+    }
+
+    li {
+      position: relative;
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      &.current-menu-item,
+      &.current-menu-ancestor {
+
+        > a {
+          color: $white;
+          background: $color-one;
+        }
+      }
+    }
+  }
+
+  // center nav items
+  #menu-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+.header {
+  background: $white;
+}
+
+#inner-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.site-header {
+  display: block;
+
+  img {
+    height: 130px;
+    width: 130px;
+  }
+}
+
+.site-subheader {
+  font-family: $font-heading;
+  font-size: 1em;
+  margin: 0 0 .5em 0;
+}
+
+.hamburger-label {
+  margin: 0;
+  font-size: .6em;
+}
+
+// navigation
+nav {
+  width: 100%;
+  text-align: center;
+}
