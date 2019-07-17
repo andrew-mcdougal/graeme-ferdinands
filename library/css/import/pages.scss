@@ -21,6 +21,15 @@ h1 {
       padding: 1.5em!important;
     }
   }
+
+  img {
+    border-radius: $border-radius;
+  }
+
+  .intro {
+    font-weight: 600;
+    font-size: 1.3em;
+  }
 }
 
 
@@ -48,6 +57,12 @@ h1 {
 }
 
 .searchform {
+
+  .screen-reader-text {
+    height: auto;
+    width: auto;
+    position: relative!important;
+  }
 
   input {
     box-sizing: border-box;

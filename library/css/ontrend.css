@@ -12,6 +12,13 @@ h4,
 h5 {
   font-family: "Chivo", sans-serif; }
 
+.grid {
+  display: grid; }
+  .grid.grid-columns--two {
+    grid-template-columns: 1fr 1fr; }
+  .grid.grid-gap-1 {
+    grid-gap: 1em; }
+
 .header {
   background: #222; }
 
@@ -122,6 +129,11 @@ h1 {
     @media all and (min-width: 768px) {
       .entry-content.sidebar {
         padding: 1.5em !important; } }
+  .entry-content img {
+    border-radius: 4px; }
+  .entry-content .intro {
+    font-weight: 600;
+    font-size: 1.3em; }
 
 .article-footer {
   display: none; }
@@ -136,6 +148,10 @@ h1 {
   padding: 0;
   margin: 0; }
 
+.searchform .screen-reader-text {
+  height: auto;
+  width: auto;
+  position: relative !important; }
 .searchform input {
   box-sizing: border-box;
   max-width: none;
