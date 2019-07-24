@@ -11,12 +11,29 @@ $gradient: linear-gradient(100deg, $color-one, $color-two);
 $font-heading: 'Chivo', sans-serif;
 $font-body: 'Overpass', sans-serif;
 
+// breakpoints
+$mobile: 320px;
+$tablet: 768px;
+
+
+// utilities
+$border-radius: 4px;
+
 // settings
 body {
   font-size: 20px;
-  line-height: 120%;
+  line-height: 160%;
   background: $gradient;
   color: $primary;
+  font-family: $font-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-heading;
 }
 
 

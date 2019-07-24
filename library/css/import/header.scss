@@ -76,7 +76,7 @@
   }
 }
 
-@media (min-width:768px) {
+@media all and (min-width:$tablet) {
   // hamburger
   .hamburger {
     display: none;
