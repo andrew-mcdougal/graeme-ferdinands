@@ -256,8 +256,7 @@ function prefix_add_footer_styles() {
 add_action( 'get_footer', 'prefix_add_footer_styles' );
 
 
-
-
+remove_action( 'woocommerce_before_single_product', 'action_woocommerce_before_single_product', 10, 2 );
 
 
 

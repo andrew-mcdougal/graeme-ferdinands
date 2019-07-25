@@ -1,0 +1,33 @@
+body.woocommerce {
+
+  .entry-title {
+    padding: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  .byline {
+    display: none;
+  }
+
+  .product_meta {
+    display: none;
+  }
+
+  // sorting on shop page
+  .woocommerce-ordering {
+    display: none;
+  }
+
+  .woocommerce-loop-product__title {
+    color: $color-one;
+  }
+
+  .add_to_cart_button {
+    background: $color-two;
+
+    &:hover,
+    &:focus {
+      background: darken($color-two, 5%);
+    }
+  }
+}
