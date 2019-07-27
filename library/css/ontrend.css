@@ -68,7 +68,8 @@ h5 {
 
   .nav {
     max-height: none;
-    overflow: visible; }
+    overflow: visible;
+    transition: none; }
     .nav:before {
       display: none; }
     .nav i {
@@ -100,9 +101,10 @@ h5 {
     width: 130px; }
 
 .site-subheader {
-  font-family: "Chivo", sans-serif;
-  font-size: 1em;
-  margin: 0 0 .5em 0; }
+  font-family: "Great Vibes", serif;
+  font-size: 2.5em;
+  margin: 0 0 .5em 0;
+  text-align: center; }
 
 .hamburger-label {
   margin: 0;
@@ -158,7 +160,8 @@ h1 {
 .searchform .screen-reader-text {
   height: auto;
   width: auto;
-  position: relative !important; }
+  position: relative !important;
+  clip-path: none; }
 .searchform input {
   box-sizing: border-box;
   max-width: none;
