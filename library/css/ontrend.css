@@ -1,9 +1,17 @@
 body {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 160%;
   background: linear-gradient(100deg, #1200ff, #ff9400);
-  color: #222;
+  color: #444;
   font-family: "Overpass", sans-serif; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  hyphens: none; }
 
 h1,
 h2,
@@ -20,7 +28,7 @@ h5 {
     grid-gap: 1em; }
 
 .header {
-  background: #222; }
+  background: #444; }
 
 .hamburger {
   position: absolute;
@@ -38,10 +46,10 @@ h5 {
     border-top: 1px solid rgba(18, 0, 255, 0.2); }
     .nav li a {
       font-size: .9em;
-      color: #222; }
+      color: #444; }
       .nav li a:visited, .nav li a:hover, .nav li a:focus
       .nav li a:visited:hover, .nav li a:visited:focus, .nav li a:link, .nav li a:visited:link {
-        color: #222; }
+        color: #444; }
       .nav li a:hover {
         background: #d0ccff; }
     .nav li.menu-item-has-children .fa {
@@ -51,7 +59,7 @@ h5 {
       right: 10px;
       top: 12px;
       font-size: 1.5em;
-      color: #222; }
+      color: #444; }
     .nav li.menu-item-has-children ul {
       margin: 0;
       max-height: 0;
