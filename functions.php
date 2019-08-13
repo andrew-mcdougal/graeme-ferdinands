@@ -239,7 +239,7 @@ can replace these fonts, change it in your scss files
 and be up and running in seconds.
 */
 function bones_fonts() {
-  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Chivo:700|Overpass:300,300i,600,600i,800');
+  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Chivo:700|Overpass:300,300i,600,600i,800|Great+Vibes|Pacifico|Yesteryear');
   wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 }
 
@@ -251,18 +251,25 @@ add_action('wp_enqueue_scripts', 'bones_fonts');
 function prefix_add_footer_styles() {
   wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/library/js/ontrend.js?v=1' );
   wp_enqueue_style( 'hamburger-css', get_stylesheet_directory_uri() . '/library/css/hamburgers/hamburgers.css' );
-  wp_enqueue_style( 'ontrend-css', get_stylesheet_directory_uri() . '/library/css/ontrend.css?v=3' );
+  wp_enqueue_style( 'ontrend-css', get_stylesheet_directory_uri() . '/library/css/ontrend.css?v=4' );
 };
 add_action( 'get_footer', 'prefix_add_footer_styles' );
 
 
+remove_action( 'woocommerce_before_single_product', 'action_woocommerce_before_single_product', 10, 2 );
 
 
 
 
-
-
-
+/**
+ * Change number or products per row to 2
+ */
+add_filter('loop_shop_columns', 'loop_columns', 999);
+if (!function_exists('loop_columns')) {
+  function loop_columns() {
+    return 2; // 2 products per row
+  }
+}
 
 
 

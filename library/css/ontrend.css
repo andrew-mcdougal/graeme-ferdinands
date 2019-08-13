@@ -1,9 +1,17 @@
 body {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 160%;
   background: linear-gradient(100deg, #1200ff, #ff9400);
-  color: #222;
+  color: #444;
   font-family: "Overpass", sans-serif; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  hyphens: none; }
 
 h1,
 h2,
@@ -20,7 +28,7 @@ h5 {
     grid-gap: 1em; }
 
 .header {
-  background: #222; }
+  background: #444; }
 
 .hamburger {
   position: absolute;
@@ -38,10 +46,10 @@ h5 {
     border-top: 1px solid rgba(18, 0, 255, 0.2); }
     .nav li a {
       font-size: .9em;
-      color: #222; }
+      color: #444; }
       .nav li a:visited, .nav li a:hover, .nav li a:focus
       .nav li a:visited:hover, .nav li a:visited:focus, .nav li a:link, .nav li a:visited:link {
-        color: #222; }
+        color: #444; }
       .nav li a:hover {
         background: #d0ccff; }
     .nav li.menu-item-has-children .fa {
@@ -51,7 +59,7 @@ h5 {
       right: 10px;
       top: 12px;
       font-size: 1.5em;
-      color: #222; }
+      color: #444; }
     .nav li.menu-item-has-children ul {
       margin: 0;
       max-height: 0;
@@ -68,7 +76,8 @@ h5 {
 
   .nav {
     max-height: none;
-    overflow: visible; }
+    overflow: visible;
+    transition: none; }
     .nav:before {
       display: none; }
     .nav i {
@@ -100,9 +109,10 @@ h5 {
     width: 130px; }
 
 .site-subheader {
-  font-family: "Chivo", sans-serif;
-  font-size: 1em;
-  margin: 0 0 .5em 0; }
+  font-family: "Great Vibes", serif;
+  font-size: 2.5em;
+  margin: 0 0 .5em 0;
+  text-align: center; }
 
 .hamburger-label {
   margin: 0;
@@ -112,6 +122,13 @@ nav {
   width: 100%;
   text-align: center; }
 
+main article {
+  background: #FFF;
+  border-radius: 4px;
+  border: none;
+  margin: 0;
+  margin-bottom: 1.5em; }
+
 h1 {
   margin: 0 0 .5em 0;
   font-size: 1.5em; }
@@ -120,10 +137,10 @@ h1 {
       font-size: 2.5em; } }
 
 .entry-content {
-  padding: 1em; }
+  padding: 1rem; }
   @media all and (min-width: 768px) {
     .entry-content {
-      padding: 1.5em; } }
+      padding: 1.5rem; } }
   .entry-content.sidebar {
     padding-right: 1em !important; }
     @media all and (min-width: 768px) {
@@ -151,7 +168,8 @@ h1 {
 .searchform .screen-reader-text {
   height: auto;
   width: auto;
-  position: relative !important; }
+  position: relative !important;
+  clip-path: none; }
 .searchform input {
   box-sizing: border-box;
   max-width: none;
@@ -165,5 +183,35 @@ h1 {
   line-height: 150%; }
   .searchform button:hover {
     background: #e68500; }
+
+body.woocommerce .entry-title {
+  padding: 1.5rem;
+  padding-bottom: 0; }
+body.woocommerce .byline {
+  display: none; }
+body.woocommerce .product_meta {
+  display: none; }
+body.woocommerce .woocommerce-ordering {
+  display: none; }
+body.woocommerce .woocommerce-loop-product__title {
+  color: #1200ff; }
+body.woocommerce .products {
+  display: flex;
+  flex-direction: row; }
+  body.woocommerce .products .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+body.woocommerce .add_to_cart_button {
+  background: #ff9400; }
+  body.woocommerce .add_to_cart_button:hover, body.woocommerce .add_to_cart_button:focus {
+    background: #e68500; }
+
+.woocommerce-page .cart_item .product-name a,
+.woocommerce-page ul.cart_list li a,
+.woocommerce-page ul.product_list_widget li a {
+  color: #1200ff;
+  text-decoration: none;
+  line-height: 120%; }
 
 /*# sourceMappingURL=ontrend.css.map */

@@ -1,6 +1,6 @@
 // colors
 $white: #FFF;
-$primary: #222;
+$primary: #444;
 
 $color-one: #1200ff;
 $color-two: #ff9400;
@@ -9,6 +9,7 @@ $gradient: linear-gradient(100deg, $color-one, $color-two);
 
 // fonts
 $font-heading: 'Chivo', sans-serif;
+$font-tagline: 'Great Vibes', serif;
 $font-body: 'Overpass', sans-serif;
 
 // breakpoints
@@ -21,11 +22,20 @@ $border-radius: 4px;
 
 // settings
 body {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 160%;
   background: $gradient;
   color: $primary;
   font-family: $font-body;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    hyphens: none;
 }
 
 h1,
@@ -35,6 +45,7 @@ h4,
 h5 {
   font-family: $font-heading;
 }
+
 
 
 
