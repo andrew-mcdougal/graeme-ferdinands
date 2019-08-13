@@ -195,9 +195,23 @@ body.woocommerce .woocommerce-ordering {
   display: none; }
 body.woocommerce .woocommerce-loop-product__title {
   color: #1200ff; }
+body.woocommerce .products {
+  display: flex;
+  flex-direction: row; }
+  body.woocommerce .products .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
 body.woocommerce .add_to_cart_button {
   background: #ff9400; }
   body.woocommerce .add_to_cart_button:hover, body.woocommerce .add_to_cart_button:focus {
     background: #e68500; }
+
+.woocommerce-page .cart_item .product-name a,
+.woocommerce-page ul.cart_list li a,
+.woocommerce-page ul.product_list_widget li a {
+  color: #1200ff;
+  text-decoration: none;
+  line-height: 120%; }
 
 /*# sourceMappingURL=ontrend.css.map */

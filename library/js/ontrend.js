@@ -35,8 +35,16 @@ console.log('works');
 		});
 	}
 
+	function addPostageNote() {
+		jQuery('.price').append('<br><small>(includes postage)</small>');
+	}
+
 	$(document).ready(function() {
 		mobileMenu();
+
+		if($('body').hasClass('single-product')) {
+			addPostageNote();
+		};
 	});
 	
 })( jQuery );

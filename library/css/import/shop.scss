@@ -22,6 +22,18 @@ body.woocommerce {
     color: $color-one;
   }
 
+  // columns
+  .products {
+    display: flex;
+    flex-direction: row;
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
   .add_to_cart_button {
     background: $color-two;
 
@@ -29,5 +41,16 @@ body.woocommerce {
     &:focus {
       background: darken($color-two, 5%);
     }
+  }
+}
+
+.woocommerce-page {
+
+  .cart_item .product-name a,
+  ul.cart_list li a,
+  ul.product_list_widget li a {
+    color: $color-one;
+    text-decoration: none;
+    line-height: 120%;
   }
 }

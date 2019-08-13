@@ -261,7 +261,15 @@ remove_action( 'woocommerce_before_single_product', 'action_woocommerce_before_s
 
 
 
-
+/**
+ * Change number or products per row to 2
+ */
+add_filter('loop_shop_columns', 'loop_columns', 999);
+if (!function_exists('loop_columns')) {
+  function loop_columns() {
+    return 2; // 2 products per row
+  }
+}
 
 
 
