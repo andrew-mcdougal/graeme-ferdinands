@@ -45,7 +45,7 @@ h5 {
     position: relative;
     border-top: 1px solid rgba(18, 0, 255, 0.2); }
     .nav li a {
-      font-size: .9em;
+      font-size: .85em;
       color: #444; }
       .nav li a:visited, .nav li a:hover, .nav li a:focus
       .nav li a:visited:hover, .nav li a:visited:focus, .nav li a:link, .nav li a:visited:link {
@@ -210,6 +210,11 @@ body.woocommerce .add_to_cart_button {
 .woocommerce-page .cart_item .product-name a,
 .woocommerce-page ul.cart_list li a,
 .woocommerce-page ul.product_list_widget li a {
+  color: #1200ff;
+  text-decoration: none;
+  line-height: 120%; }
+
+.product_list_widget a {
   color: #1200ff;
   text-decoration: none;
   line-height: 120%; }
